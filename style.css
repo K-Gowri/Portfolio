@@ -90,3 +90,47 @@ body{
     color: var(--main-color);
     font-size: 1.5rem;
 }
+.profile-page .social-media{
+    
+    margin: .6rem 0.8rem;
+}
+.profile-page .social-media a{
+     display: inline-flex;
+     justify-content: center;
+     align-items: center;
+     width:2.5rem;
+     height: 2.5rem;
+     background: transparent;
+     border:var(--border);
+     border-radius:50%;
+     color: var(--main-color);
+    margin: 0.2rem;
+    transition: .5s;
+}
+.profile-page .social-media a:hover{
+    background: var(--main-color);
+    color:var(--white-color);
+}
+.profile-page p{
+    text-align: justify;
+}
+.profile-page .btn-box{
+   margin-top: 1.2rem;
+}
+.btn{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width:10rem;
+    height:3rem;
+    background: var(--main-color);
+    border-radius: .3rem;
+    font-size: 1rem;
+    color:var(--white-color);
+    font-weight: 500;
+    margin: 0 1rem;
+}
+.btn-box .btn:nth-child(2){
+    background: transparent;
+    color: var(--main-color);
+}
