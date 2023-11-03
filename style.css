@@ -124,13 +124,27 @@ body{
     width:10rem;
     height:3rem;
     background: var(--main-color);
+    border: var(--border);
     border-radius: .3rem;
     font-size: 1rem;
     color:var(--white-color);
     font-weight: 500;
     margin: 0 1rem;
+    transition: .5s;
+}
+.btn:hover{
+    background: transparent;
+    color: var(--main-color);
 }
 .btn-box .btn:nth-child(2){
     background: transparent;
     color: var(--main-color);
+}
+.btn-box .btn:nth-child(2):hover{
+    background: var(--main-color);
+    color: var(--white-color);
+}
+.book-page.page-right{
+    position: absolute;
+    right: 0;
 }
