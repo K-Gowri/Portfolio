@@ -144,10 +144,14 @@ body{
     background: var(--main-color);
     color: var(--white-color);
 }
+.book-page.page-right.turn{
+    transform: rotateY(-180deg);
+}
 .book-page.page-right{
     position: absolute;
     right: 0;
     transform-style: preserve-3d;
+    transform-origin: left;
 }
 .book-page .page-front,
 .book-page .page-back {
@@ -162,7 +166,7 @@ body{
 .book-page .page-front{
     transform: rotateY(0deg) translateZ(1px);
 }
-.book-page .page-ba{
+.book-page .page-back{
      transform: rotateY(180deg) translateZ(1px) ;
 }
 .title{
@@ -170,27 +174,58 @@ body{
     margin-bottom: 1rem;
 
 }
-.workedec-box{
-    border-left: var(--border);
+.workeduc-box{
+    border-left:var(--border);
 }
-.workedec-box .workedec-content::before{
+
+.workedec-box ,.workedec-content{
+    position: relative;
+   
+    padding-left: 1.6rem;
+    margin-bottom: 0.5rem;
+}
+.workedec-box,.workedec-content::before{
     content: '';
     position:absolute;
     top:0;
+    left:-0.65rem;
     width:1.2rem;
     height: 1.2rem;
     background:var(--main-color);
     border-radius: 50%;
-}
-.workedec-box .workedec-content{
-    position: relative;
-    background: seagreen;
-    padding-left: 1.6rem;
-    margin-bottom: 1.2rem;
 }
 .workedec-content .year i{
     margin-right: .4rem;
 }
 .workedec-content .year{
     color: var(--main-color);
+}
+.number-page{
+    position: absolute;
+    bottom:1.2rem;
+    left:50%;
+    transform:translateX(-50%);
+}
+.nextprev-btn{
+    position: absolute;
+    bottom: .9rem;
+    right: 1.5rem;
+    width: 2rem;
+    height: 2rem;
+    
+    cursor: pointer;
+    font-size: 2rem;
+    color: var(--second-text-color);
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.nextprev-btn:hover{
+    color:var(--main-color);
+}
+.nextprev-btn.back{
+    left:1.5rem;
+}
+.workedec-box ,#edu{
+    margin-bottom: 5.5rem;
 }
